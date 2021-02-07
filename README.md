@@ -1,5 +1,5 @@
 # health-app
-Year 2 Sem 1 Semestral Project in Nanyang Polytechnic- -Object-Oriented Programming & Project (ITP192)
+Year 1 Sem 2 Semestral Project in Nanyang Polytechnic- -Object-Oriented Programming & Project (ITP192)
 
 As part of NYP's Object-Oriented Programming & Project Module, I am tasked to develop a Desktop Application using Java
 
