@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.FMPg">
+   <children>
+      <ListView fx:id="vape" layoutY="195.0" prefHeight="333.0" prefWidth="335.0" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="btnSendMe" mnemonicParsing="false" onAction="#bringMeBack" prefHeight="54.0" prefWidth="105.0" text="Back To Home" />
+      <ImageView fx:id="writeSomething" fitHeight="86.0" fitWidth="61.0" layoutX="260.0" layoutY="116.0" onMouseClicked="#letMeCreate" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pictures/editing.png" />
+         </image>
+      </ImageView>
+         <!--<font>
+            <Font size="18.0" />
+         </font>-->
+      </Label>
+      <Button fx:id="sPg" layoutY="527.0" mnemonicParsing="false" onAction="#changeForum" prefHeight="73.0" prefWidth="165.0" text="See Forum" />
+      <Button fx:id="changeF" layoutX="165.0" layoutY="527.0" mnemonicParsing="false" onAction="#createAForum" prefHeight="73.0" prefWidth="172.0" text="Create New Forum" />
+     
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.EditReminderController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="335.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="335.0" style="-fx-background-color: rgb(230,230,230);" text="REMINDER" textAlignment="CENTER">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <Button layoutX="10.0" layoutY="5.0" mnemonicParsing="false" onAction="#goToReminder" prefHeight="45.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView fx:id="backButton" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goToReminder">
+                     <image>
+                        <Image url="@../../../../../Back.jpeg"/>
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="reminderContainer" layoutY="130.0" prefHeight="370.0" prefWidth="335.0">
+         <content>
+            <GridPane fx:id="content" layoutX="1.0" prefWidth="333.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+            </GridPane>
+         </content></ScrollPane>
+      <Pane layoutY="550.0" prefHeight="50.0" prefWidth="335.0" style="-fx-background-color: rgb(230,230,230);" />
+      <Pane fx:id="addReminderButton" layoutY="500.0" prefHeight="50.0" prefWidth="335.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goToAddReminder" prefHeight="50.0" prefWidth="335.0" text="Add New Reminder">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="270.0" layoutY="5.0">
+               <image>
+                  <Image url="@../../resources/add.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="60.0" prefHeight="40.0" prefWidth="335.0" style="-fx-background-color: rgb(230,230,230);">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="335.0" style="-fx-background-color: rgb(180,180,180);" text="Edit Reminders" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="100.0" prefHeight="30.0" prefWidth="335.0" style="-fx-background-color: rgb(210,210,210);">
+         <children>
+            <TextField fx:id="searchBar" layoutX="85.0" layoutY="1.0" onKeyReleased="#search" prefHeight="26.0" prefWidth="244.0" promptText="Enter Title..." style="-fx-border-color: black; -fx-border-width: 1px; -fx-background-color: white;" />
+            <Label layoutX="25.0" prefHeight="30.0" prefWidth="53.0" text="Search: " />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

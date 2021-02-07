@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.AdminMessageInboxDetailsController">
+   <children>
+      <Label layoutX="25.0" layoutY="65.0" text="Username:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="93.0" text="Email:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" editable="false" layoutX="110.0" layoutY="67.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="22.0" prefWidth="105.0" />
+      <TextField fx:id="emailTextField" editable="false" layoutX="110.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="22.0" prefWidth="163.0" />
+      <Label layoutX="61.0" layoutY="175.0" text="Category :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="125.0" text="General Experience :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="experienceTextField" editable="false" layoutX="59.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="22.0" prefWidth="163.0" />
+      <TextField fx:id="categoryTextField" editable="false" layoutX="59.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="22.0" prefWidth="163.0" />
+      <Label layoutX="60.0" layoutY="225.0" text="Feedback :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="feedbackTextArea" editable="false" layoutX="59.0" layoutY="250.0" prefHeight="110.0" prefWidth="175.0" wrapText="true" />
+      <ImageView fx:id="userimage" fitHeight="175.0" fitWidth="213.0" layoutX="315.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Pictures/neutral.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="315.0" layoutY="225.0" text="Your response:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="responseTextArea" layoutX="315.0" layoutY="250.0" prefHeight="110.0" prefWidth="175.0" promptText="Enter your reply here..." wrapText="true" />
+      <Button fx:id="sendBtn" layoutX="501.0" layoutY="335.0" mnemonicParsing="false" onAction="#sendMsg" text="Send" />
+      <Label fx:id="dateLabel" layoutX="70.0" layoutY="360.0" text="Sent on : 21/3/2019 16:44" />
+   </children>
+</AnchorPane>

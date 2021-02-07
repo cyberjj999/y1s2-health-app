@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.ConsumedFoodInfoController">
+   <children>
+      <Label fx:id="foodNameLabel" alignment="TOP_CENTER" layoutX="103.0" layoutY="64.0" text="foodName">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView fx:id="foodImage" fitHeight="150.0" fitWidth="159.0" layoutX="23.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="servingSizeLabel" graphicTextGap="0.0" layoutX="27.0" layoutY="255.0" text="Serving size">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="caloriesLabel" graphicTextGap="0.0" layoutX="55.0" layoutY="296.0" text="Calories" />
+      <Label fx:id="carbsLabel" graphicTextGap="0.0" layoutX="55.0" layoutY="346.0" text="Carbs" />
+      <Label fx:id="portionLabel" layoutX="200.0" layoutY="255.0" prefHeight="20.0" prefWidth="87.0" text="Portion : 1">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="fatsLabel" graphicTextGap="0.0" layoutX="55.0" layoutY="370.0" text="Fats" />
+      <Label fx:id="sodiumLabel" graphicTextGap="0.0" layoutX="168.0" layoutY="346.0" text="Sodium" />
+      <Label fx:id="sugarLabel" graphicTextGap="0.0" layoutX="167.0" layoutY="320.0" text="Sugar" />
+      <Label fx:id="cholesterolLabel" graphicTextGap="0.0" layoutX="168.0" layoutY="296.0" text="Cholesterol" />
+      <Pane layoutX="188.0" layoutY="103.0" prefHeight="144.0" prefWidth="138.0">
+         <children>
+            <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="1.0" layoutY="1.0" prefHeight="144.0" prefWidth="138.0" text="Description" />
+         </children>
+      </Pane>
+      <Label fx:id="proteinLabel" graphicTextGap="0.0" layoutX="55.0" layoutY="320.0" text="Protein" />
+      <ImageView fx:id="exerciseImage" fitHeight="123.0" fitWidth="152.0" layoutX="21.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Gym2_Wallpaper.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="exerciseDescriptionLabel" layoutX="171.0" layoutY="405.0" prefHeight="123.0" prefWidth="145.0" text="To burn off this amount &#10;of calories, you need to &#10;jog for  around 30min&#10;&#10;" />
+      <HBox layoutX="-2.0" prefHeight="56.0" prefWidth="272.0" spacing="62.5" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="backBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Back.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField alignment="CENTER" editable="false" minWidth="-Infinity" prefHeight="40.0" prefWidth="115.0" text="Consumed food">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="locationBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goLocation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Location.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <Line endX="192.00003051757812" endY="-3.814697265625E-6" layoutX="143.0" layoutY="56.0" startX="-145.0" startY="-3.814697265625E-6" />
+      <HBox layoutX="-1.0" layoutY="537.0" prefHeight="40.0" prefWidth="335.0" spacing="28.75" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <ImageView fx:id="reminderBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goReminder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Reminder.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="exerciseBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goExercise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Exercise.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="homeBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Home.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="foodBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goFood" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Food.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="socialBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goSocial" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Social.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+         </padding>
+      </HBox>
+      <Line endX="187.3333740234375" endY="1.0" layoutX="147.0" layoutY="543.0" startX="-148.00001525878906" startY="1.0" />
+   </children>
+</AnchorPane>

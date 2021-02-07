@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.homepageTestController">
+   <children>
+      <Button fx:id="testBtn" layoutX="77.0" layoutY="81.0" mnemonicParsing="false" onAction="#goNutritionTrack" text="go to nutrition track" />
+      <Button fx:id="testBtn2" layoutX="325.0" layoutY="81.0" mnemonicParsing="false" onAction="#goUserFeedback" text="user feedback" />
+      <Button fx:id="testBtn3" layoutX="226.0" layoutY="200.0" mnemonicParsing="false" onAction="#goAdminInbox" prefHeight="38.0" prefWidth="200.0" text="admin inbox" />
+      <Button fx:id="testBtn4" layoutX="309.0" layoutY="276.0" mnemonicParsing="false" onAction="#goUserInbox" text="User inbox" />
+   </children>
+</AnchorPane>

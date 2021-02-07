@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minWidth="-Infinity" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.HomepageViewController">
+   <children>
+      <AnchorPane layoutX="-2.0" prefHeight="600.0" prefWidth="335.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="200.0" spacing="62.5" style="-fx-background-color: light-blue;" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+               </padding>
+               <children>
+                  <ImageView fx:id="feedbackBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goFeedback" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../like.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <TextField alignment="CENTER" editable="false" minWidth="-Infinity" prefHeight="40.0" prefWidth="115.0" text="Home">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></TextField>
+                  <ImageView fx:id="locationBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goLocation" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Location.jpeg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="24.0" layoutY="24.0" prefHeight="100.0" prefWidth="200.0" spacing="28.75" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="544.0">
+               <children>
+                  <ImageView fx:id="reminderBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goReminder" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Reminder.jpeg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="exerciseBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goExercise" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Exercise.jpeg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="homeBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Home.jpeg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="foodBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goFood" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Food.jpeg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="socialBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goSocial" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Social.jpeg" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+               </padding>
+            </HBox>
+            <SplitPane dividerPositions="0.36122448979591837" layoutY="81.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="54.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="333.0">
+                     <children>
+                        <Circle fill="DODGERBLUE" layoutX="64.0" layoutY="90.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="219.33333333333331" AnchorPane.topAnchor="40.0" />
+                        <TextArea layoutX="122.0" layoutY="47.0" prefHeight="86.0" prefWidth="190.0" text="Age: 18&#10;Birthday: 3rd January 2001&#10;Medical Condition: &#10;Pierre Robin Sequence" />
+                        <TextField layoutX="122.0" layoutY="14.0" text="Wong Zhi" />
+                        <ImageView fx:id="userMessageInboxBtn" fitHeight="40.0" fitWidth="40.0" layoutX="279.0" layoutY="2.0" onMouseClicked="#goUserMessageInbox" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../inbox.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Button fx:id="editProfBtn" layoutX="27.0" layoutY="9.0" mnemonicParsing="false" onAction="#editProfile" text="Edit profile">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="logoutBtn" layoutX="27.0" layoutY="147.0" mnemonicParsing="false" onAction="#logOut" text="Log out">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="329.0" prefWidth="333.0">
+                     <children>
+                        <Button fx:id="admin" layoutX="14.0" layoutY="218.0" mnemonicParsing="false" onAction="#toAdmin" text="Go to Admin">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="viewFoodConsumedBtn" layoutX="14.0" layoutY="179.0" mnemonicParsing="false" onAction="#viewConsumedFood" text="View food consumed">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Pane layoutX="-1.0" prefHeight="164.0" prefWidth="335.0" style="-fx-background-color: pink;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="14.0" prefHeight="145.0" prefWidth="309.0" text="Welcome back user! We hope you are having a great day! We hope this app would help improve your physical and mental health!&#10;Enjoy using the app!&#10;" wrapText="true">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children></Pane>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

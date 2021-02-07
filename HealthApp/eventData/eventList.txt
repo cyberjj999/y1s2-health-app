@@ -1,0 +1,4 @@
+Music;2019-01-28T21:00;Bedok Community Centre;Music2;qweqweqwe;file:/C:/SIT%20Work/ToBeDeleted/Untitled.png
+Information & Technology;2019-01-29T22:00;Chong Pang Community Club;it1;nononononono;file:/C:/SIT%20Work/ToBeDeleted/NYP%20Enrolment%20Pic.jpg
+Information & Technology;2019-01-28T21:21;Bedok Community Centre;it2;qweqweqwe;file:/C:/SIT%20Work/ToBeDeleted/Untitled.png
+Exercise;2019-01-28T21:31;Bedok Community Centre;ex1;zxczxczxczxc;file:/C:/SIT%20Work/ToBeDeleted/profileTime%20(2).png

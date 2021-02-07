@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.AddReminderController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="335.0" style="-fx-background-color: rgb(230,230,230);">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="335.0" text="REMINDER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button layoutX="10.0" layoutY="5.0" mnemonicParsing="false" onAction="#goToEditReminder" prefHeight="45.0" prefWidth="40.0">
+               <graphic>
+                  <ImageView fx:id="backButton" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goToEditReminder">
+                     <image>
+                        <Image url="@../../../../../Back.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="60.0" prefHeight="40.0" prefWidth="335.0" style="-fx-background-color: rgb(180,180,180);">
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="335.0" text="Reminder Details">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="100.0" prefHeight="400.0" prefWidth="335.0">
+         <children>
+            <TextField fx:id="titleField" layoutX="145.0" layoutY="15.0" prefHeight="26.0" prefWidth="149.0" promptText="Title" />
+            <MenuButton fx:id="repetitionButton" layoutX="145.0" layoutY="50.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="149.0" text="No Repeat">
+              <items>
+                  <MenuItem mnemonicParsing="false" text="No Repeat" />
+                  <MenuItem mnemonicParsing="false" text="Daily" />
+                <MenuItem mnemonicParsing="false"  text="Weekly" />
+                <MenuItem mnemonicParsing="false"  text="Monthly" />
+                  <MenuItem mnemonicParsing="false"  text="Yearly" />
+              </items>
+            </MenuButton>
+            <TextArea fx:id="descriptionField" layoutX="17.0" layoutY="180.0" prefHeight="197.0" prefWidth="301.0" promptText="Description..." style="-fx-background-color: rgb(230,230,230);" />
+            <Pane layoutX="1.0" onMouseClicked="#changeImage" prefHeight="130.0" prefWidth="130.0" style="-fx-background-color: inherit; -fx-border-color: black; -fx-border-width: 2px;" />
+            <ImageView fx:id="imagePane" fitHeight="130.0" fitWidth="130.0" layoutX="1.0" onMouseClicked="#changeImage">
+               <image>
+                  <Image url="@../../resources/add.png" />
+               </image>
+            </ImageView>
+            <JFXTimePicker fx:id="timeField" editable="true" layoutX="145.0" layoutY="130.0" prefHeight="29.0" prefWidth="149.0" />
+            <JFXDatePicker fx:id="dateField" layoutX="145.0" layoutY="91.0" prefHeight="29.0" prefWidth="149.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="550.0" prefHeight="50.0" prefWidth="335.0" style="-fx-background-color: rgb(230,230,230);" />
+      <Button layoutY="500.0" mnemonicParsing="false" onAction="#confirmButton" prefHeight="50.0" prefWidth="335.0" text="Confirm &amp; Save">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="253.0" layoutY="505.0">
+         <image>
+            <Image url="@../../resources/tick.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

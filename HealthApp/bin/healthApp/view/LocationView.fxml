@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.LocationController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="-2.0" prefHeight="600.0" prefWidth="335.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="200.0" spacing="72.5" AnchorPane.bottomAnchor="544.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <padding>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </padding>
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#toHomePage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Back.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Location">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="24.0" layoutY="24.0" prefHeight="100.0" prefWidth="200.0" spacing="28.75" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="544.0">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Reminder.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Exercise.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#toHomepage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Home.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Food.jpeg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#toMainPage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Social.jpeg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+                     </padding>
+                  </HBox>
+                  <TextField fx:id="searchBar" layoutX="14.0" layoutY="56.0" prefHeight="26.0" prefWidth="262.0" promptText="Search" />
+                  <ScrollPane hbarPolicy="NEVER" layoutX="14.0" layoutY="94.0" prefHeight="442.0" prefWidth="306.0">
+                     <content>
+                        <ListView fx:id="searchList" prefHeight="442.0" prefWidth="306.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="searchButton" layoutX="286.0" layoutY="56.0" mnemonicParsing="false" onAction="#onSelection" prefHeight="10.0" prefWidth="10.0" text="Button" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

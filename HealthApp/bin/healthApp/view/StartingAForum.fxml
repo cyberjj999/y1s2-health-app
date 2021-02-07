@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.CreatingForums">
+   <children>
+      <GridPane layoutY="132.0" prefHeight="363.0" prefWidth="335.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="108.5" minWidth="3.0" prefWidth="24.0" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="297.5" minWidth="10.0" prefWidth="249.5" />
+            <ColumnConstraints hgrow="ALWAYS" maxWidth="277.0" minWidth="0.5" prefWidth="26.5" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="250.5" minHeight="5.5" prefHeight="57.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="218.5" minHeight="3.0" prefHeight="46.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="222.5" minHeight="0.0" prefHeight="56.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="43.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="212.0" minHeight="0.0" prefHeight="55.5" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="196.0" minHeight="15.0" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="196.0" minHeight="27.5" prefHeight="73.5" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Start a Discussion" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label text="Category of Discussion" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="titleOfTopic" prefHeight="41.0" prefWidth="245.0" promptText="eg. Heart Burn" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+            <ComboBox fx:id="myCombobox" prefHeight="41.0" prefWidth="284.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
+            	<items>
+        			<FXCollections fx:factory="observableArrayList">
+			            <String fx:value="Heart Issues" />
+			            <String fx:value="Knee Pain" />
+			            <String fx:value="Eczema" />
+        			</FXCollections>
+        		</items>
+        	</ComboBox>
+            <Label text="Title of Topic" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="check" onAction="#checkingDone" mnemonicParsing="false" prefHeight="37.0" prefWidth="94.0" text="Done!" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label prefHeight="28.0" prefWidth="181.0" text="Double Check" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Button fx:id="newForum" layoutX="163.0" layoutY="527.0" mnemonicParsing="false" onAction="#neFo" prefHeight="73.0" prefWidth="172.0" text="Create New Forum" />
+ 	  <Button fx:id="seeForum" layoutY="527.0" mnemonicParsing="false" onAction="#seFo" prefHeight="73.0" prefWidth="165.0" text="See Forum" />
+  
+ 	  <Button fx:id="retrace" layoutY="35.0" mnemonicParsing="false" onAction="#retraceBack" text="Back to Home" />
+   </children>
+</AnchorPane>

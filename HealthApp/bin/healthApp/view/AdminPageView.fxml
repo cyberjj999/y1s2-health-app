@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HealthApp.controller.AdminPageController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="enterEvent" layoutX="798.0" layoutY="556.0" mnemonicParsing="false" onAction="#addEvent" text="Enter" />
+            <Button fx:id="toHome" layoutX="728.0" layoutY="556.0" mnemonicParsing="false" onAction="#toHomepage" text="Return" />
+            <Button fx:id="editEvents" layoutX="637.0" layoutY="556.0" mnemonicParsing="false" onAction="#editEvent" text="Edit Events" />
+            <Label layoutX="48.0" layoutY="90.0" text="Event Name:" />
+            <TextField fx:id="eventName" layoutX="48.0" layoutY="112.0" prefHeight="26.0" prefWidth="238.0" />
+            <DatePicker fx:id="eventDatePicker" layoutX="48.0" layoutY="176.0" />
+            <Label layoutX="52.0" layoutY="154.0" text="Event Date:" />
+            <Label layoutX="48.0" layoutY="219.0" text="Category:" />
+            <ChoiceBox fx:id="eventCategory" layoutX="48.0" layoutY="240.0" prefHeight="26.0" prefWidth="238.0" />
+            <Label layoutX="48.0" layoutY="283.0" text="Venue:" />
+            <TextField fx:id="eventVenue" layoutX="48.0" layoutY="304.0" prefHeight="26.0" prefWidth="238.0" />
+            <ListView fx:id="eventVenueList" layoutX="48.0" layoutY="330.0" prefHeight="131.0" prefWidth="238.0" />
+            <Label layoutX="326.0" layoutY="90.0" text="Description:" />
+            <TextArea fx:id="eventDescription" layoutX="326.0" layoutY="112.0" prefHeight="221.0" prefWidth="516.0" />
+            <Label layoutX="48.0" layoutY="478.0" text="Time (24-hour):" />
+            <TextField fx:id="dHour" layoutX="46.0" layoutY="500.0" prefHeight="26.0" prefWidth="40.0" promptText="HH" />
+            <Label layoutX="326.0" layoutY="353.0" text="Image:" />
+            <ImageView fx:id="eventImage" fitHeight="222.0" fitWidth="250.0" layoutX="372.0" layoutY="347.0" onMouseClicked="#getEventImage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../SIT%20Work/ToBeDeleted/select-image-vector-11591761.jpg" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="dMinute" layoutX="98.0" layoutY="500.0" prefHeight="26.0" prefWidth="48.0" promptText="mm" />
+      <Text layoutX="90.0" layoutY="516.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+   </children>
+</AnchorPane>

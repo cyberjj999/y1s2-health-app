@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.filteredFruitsAndVegetablesController">
+   <children>
+      <Button fx:id="viewFruitsAndVegetables" layoutX="30.0" layoutY="482.0" mnemonicParsing="false" onMouseClicked="#viewFruitsAndVegetables" text="View all food (fruits and vegetables)">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <HBox layoutX="-5.0" prefHeight="56.0" prefWidth="0.0" spacing="62.5" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="backBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Back.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField alignment="CENTER" editable="false" minWidth="-Infinity" prefHeight="40.0" prefWidth="125.0" text="Fruits &amp; vegetables">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="locationBtn" fitHeight="40.0" fitWidth="33.0" onMouseClicked="#goLocation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Location.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="554.0" prefHeight="40.0" prefWidth="335.0" spacing="28.75" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="reminderBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goReminder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Reminder.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="exerciseBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goExercise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Exercise.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="homeBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Home.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="foodBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goFood" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Food.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="socialBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goSocial" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Social.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="48.0" layoutY="93.0" text="Types of fruits and vegetables" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="186.0" endY="-3.814697265625E-6" layoutX="149.0" layoutY="56.0" startX="-148.99998474121094" startY="-3.814697265625E-6" />
+      <Line endX="185.99996948242188" layoutX="149.0" layoutY="544.0" startX="-148.99998474121094" />
+      <GridPane gridLinesVisible="true" layoutX="49.0" layoutY="131.0" prefHeight="330.0" prefWidth="242.0" style="-fx-background-color: pink;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="berries" fitHeight="80.0" fitWidth="242.0" onMouseClicked="#filterBerries" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../../grapes.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="citrusFruit" fitHeight="80.0" fitWidth="242.0" onMouseClicked="#filterCitrusFruit" pickOnBounds="true" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../../lemon.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="herbageVegetables" fitHeight="83.0" fitWidth="240.0" onMouseClicked="#filterHerbageVegetables" pickOnBounds="true" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../../../lettuce.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="rootVegetables" fitHeight="80.0" fitWidth="239.0" onMouseClicked="#filterRootVegetables" pickOnBounds="true" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../../potato.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

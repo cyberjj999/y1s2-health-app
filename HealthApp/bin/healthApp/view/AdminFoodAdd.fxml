@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.AdminFoodAddController">
+   <children>
+      <MenuBar layoutX="102.0" layoutY="2.0" prefHeight="54.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <MenuBar layoutY="1211.0" prefHeight="54.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1211.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <Button fx:id="backBtn" layoutX="16.0" layoutY="64.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Label layoutX="153.0" layoutY="59.0" prefHeight="34.0" prefWidth="597.0" text="Dear admins , you can use this page to add food into the food database.">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <CheckBox fx:id="meatCheckBox" layoutX="585.0" layoutY="120.0" mnemonicParsing="false" text="Meat">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <Label layoutX="621.0" layoutY="91.0" text="Main - Category" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <CheckBox fx:id="breadAndCerealCheckBox" layoutX="585.0" layoutY="150.0" mnemonicParsing="false" text="Bread and cereal">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="milkCheckBox" layoutX="705.0" layoutY="120.0" mnemonicParsing="false" text="Milk">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="fruitsAndVegetablesCheckBox" layoutX="585.0" layoutY="180.0" mnemonicParsing="false" text="Fruits and vegetables">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <Label layoutX="629.0" layoutY="203.0" text="Sub - Category" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <CheckBox fx:id="rootVegetablesCheckBox" layoutX="585.0" layoutY="532.0" mnemonicParsing="false" text="Root vegetables">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="breadCheckBox" layoutX="705.0" layoutY="372.0" mnemonicParsing="false" text="Bread">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="iceCreamCheckBox" layoutX="705.0" layoutY="302.0" mnemonicParsing="false" text="Ice Cream">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="beefCheckBox" layoutX="705.0" layoutY="262.0" mnemonicParsing="false" text="Beef">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="porkCheckBox" layoutX="705.0" layoutY="232.0" mnemonicParsing="false" text="Pork">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="citrusFruitCheckBox" layoutX="585.0" layoutY="472.0" mnemonicParsing="false" text="Citrus Fruit">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="herbageVegetablesCheckBox" layoutX="585.0" layoutY="502.0" mnemonicParsing="false" text="Herbage vegetables">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="berriesCheckBox" layoutX="585.0" layoutY="442.0" mnemonicParsing="false" text="Berries">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="cheeseCheckBox" layoutX="585.0" layoutY="302.0" mnemonicParsing="false" text="Cheese">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="wholeMilkCheckBox" layoutX="585.0" layoutY="332.0" mnemonicParsing="false" text="Whole Milk">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="chickenCheckBox" layoutX="585.0" layoutY="232.0" mnemonicParsing="false" text="Chicken">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="fishCheckBox" layoutX="585.0" layoutY="262.0" mnemonicParsing="false" text="Fish">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="riceCheckBox" layoutX="705.0" layoutY="402.0" mnemonicParsing="false" text="Rice">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="oatCheckBox" layoutX="585.0" layoutY="402.0" mnemonicParsing="false" text="Oat">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="noodlesCheckBox" layoutX="585.0" layoutY="372.0" mnemonicParsing="false" text="Noodles">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <Button fx:id="addBtn" layoutX="337.0" layoutY="501.0" mnemonicParsing="false" onAction="#addToDatabase" prefHeight="74.0" prefWidth="192.0" text="Add to database">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TextArea fx:id="descriptionTextArea" layoutX="78.0" layoutY="396.0" prefHeight="133.0" prefWidth="215.0" promptText="enter description of food..." wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="78.0" layoutY="105.0" prefHeight="40.0" prefWidth="120.0" text="Food Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="foodTextField" layoutX="180.0" layoutY="110.0" prefHeight="35.0" prefWidth="96.0" promptText="food name" />
+      <Label layoutX="78.0" layoutY="372.0" text="Description:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="chooseFileBtn" layoutX="78.0" layoutY="183.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#chooseFile" prefHeight="30.0" prefWidth="96.0" text="Choose file">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="78.0" layoutY="150.0" text="Food image:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fileName" disable="true" layoutX="186.0" layoutY="184.0" prefHeight="30.0" prefWidth="120.0" />
+      <Label layoutX="328.0" layoutY="432.0" text="Serving size unit:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="359.0" layoutY="394.0" text="Serving size:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="366.0" layoutY="352.0" text="Cholesterol:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="394.0" layoutY="114.0" text="Calories:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="407.0" layoutY="273.0" text="Sugar:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="396.0" layoutY="315.0" text="Sodium:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="234.0" text="Fats:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="192.0" text="Carbs:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="152.0" text="Protein:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="caloriesTextField" layoutX="464.0" layoutY="114.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="65.0" promptText="in kcal" />
+      <TextField fx:id="proteinTextField" layoutX="464.0" layoutY="154.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="in grams" />
+      <TextField fx:id="carbsTextField" layoutX="464.0" layoutY="194.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="in grams" />
+      <TextField fx:id="fatsTextField" layoutX="464.0" layoutY="234.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="in grams" />
+      <TextField fx:id="sugarTextField" layoutX="464.0" layoutY="274.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="in grams" />
+      <TextField fx:id="sodiumTextField" layoutX="464.0" layoutY="314.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="in mg" />
+      <TextField fx:id="cholesterolTextField" layoutX="464.0" layoutY="354.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="in mmol/mg" />
+      <TextField fx:id="servingSizeTextField" layoutX="464.0" layoutY="394.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="1,2..etc" />
+      <TextField fx:id="servingSizeUnitTextField" layoutX="464.0" layoutY="434.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="63.0" promptText="g , mg .." />
+      <TextArea fx:id="imageTextArea" editable="false" layoutX="78.0" layoutY="230.0" prefHeight="137.0" prefWidth="212.0" promptText="image will display here...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="imageHolder" fitHeight="133.0" fitWidth="212.0" layoutX="80.0" layoutY="232.0" pickOnBounds="true" />
+      <Line endX="100.0" layoutX="680.0" layoutY="298.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="680.0" layoutY="434.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="680.0" layoutY="364.0" startX="-100.0" />
+   </children>
+</AnchorPane>

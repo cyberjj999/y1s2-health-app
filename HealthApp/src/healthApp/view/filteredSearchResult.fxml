@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthApp.controller.filteredSearchResultController">
+   <children>
+      <VBox fx:id="vBox" layoutX="35.0" layoutY="193.0" prefHeight="305.0" prefWidth="266.0" />
+      <TextField fx:id="foodSearchField" layoutX="155.0" layoutY="101.0" onAction="#foodSearch" />
+      <Label fx:id="noOfResults" layoutX="157.0" layoutY="164.0" text="Showing 1 out of 17 results" />
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="0.0" spacing="62.5" AnchorPane.bottomAnchor="534.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+         </padding>
+         <children>
+            <ImageView fx:id="backBtn1" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Back.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <TextField alignment="CENTER" editable="false" minWidth="-Infinity" prefHeight="40.0" prefWidth="120.0" text="List of food">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="locationBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goLocation" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Location.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="554.0" prefHeight="40.0" prefWidth="335.0" spacing="28.75" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="reminderBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goReminder" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Reminder.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="exerciseBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goExercise" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Exercise.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="homeBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Home.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="foodBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goFood" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Food.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="socialBtn" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#goSocial" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Social.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets bottom="8.0" left="10.0" right="10.0" top="8.0" />
+         </padding>
+      </HBox>
+      <Line endX="167.0" layoutX="168.0" layoutY="544.0" startX="-167.99998474121094" />
+      <Label layoutX="35.0" layoutY="99.0" text="Food Search:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="159.0" text="Search results:" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="167.0" endY="7.62939453125E-6" layoutX="168.0" layoutY="66.0" startX="-168.0" startY="7.62939453125E-6" />
+      <Label fx:id="search" layoutX="35.0" layoutY="134.0" text="You searched for : food name" />
+   </children>
+</AnchorPane>
